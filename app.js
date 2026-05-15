@@ -1,7 +1,4 @@
 // ===== CONFIGURATION =====
-// ⚠️ คำเตือน: การใส่ API Key ไว้ในโค้ดฝั่ง Client (เบราว์เซอร์) มีความเสี่ยงที่ผู้อื่นจะเห็นและนำไปใช้ได้
-// สำหรับโปรเจกต์นี้เป็นการทำแบบง่ายๆ ตามที่คุณตกลง จึงใส่ไว้ที่นี่
-const OPENAI_API_KEY = "";
 const MAX_ARCHIVE = 20;
 
 // ===== DOM ELEMENTS =====
@@ -25,28 +22,24 @@ let systemPrompt = "";
 
 // ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', async () => {
-  // Load system prompt from skill.md
   try {
     const response = await fetch('skill.md');
     if (!response.ok) throw new Error('Failed to load skill.md');
     systemPrompt = await response.text();
   } catch (err) {
     console.error("Error loading skill.md:", err);
-    showError("ไม่สามารถโหลดไฟล์ skill.md ได้ หากคุณเปิดไฟล์ html โดยตรง (file://) อาจติดปัญหา CORS แนะนำให้รันผ่าน Live Server");
+    showError("ไม่สามารถโหลดไฟล์ skill.md ได้");
   }
 
-  // Set up character count listener
   inputText.addEventListener('input', () => {
     const count = inputText.value.length;
     charCount.textContent = `${count.toLocaleString()} / 2,000`;
 
-    // Hide error when typing
     if (errorMessage.classList.contains('visible')) {
       errorMessage.classList.remove('visible');
     }
   });
 
-  // Load archive from Local Storage
   renderArchive();
 });
 
@@ -61,48 +54,41 @@ async function analyzeText() {
   }
 
   if (!systemPrompt) {
-    showError("ระบบยังไม่พร้อมใช้งาน (โหลด skill.md ไม่สำเร็จ)");
+    showError("ระบบยังไม่พร้อมใช้งาน เพราะโหลด skill.md ไม่สำเร็จ");
     return;
   }
 
-  // Set loading state
   setLoading(true);
   hideError();
   resultCard.classList.remove('visible');
 
   try {
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    const response = await fetch("/api/analyze", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${OPENAI_API_KEY}`
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "gpt-4o", // Or gpt-3.5-turbo if 4o is not accessible
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: text }
-        ],
-        temperature: 0.7,
-        max_tokens: 2000
+        text: text,
+        systemPrompt: systemPrompt
       })
     });
 
+    const data = await response.json();
+
     if (!response.ok) {
-      const errorData = await response.json();
-      throw new Error(errorData.error?.message || "เกิดข้อผิดพลาดในการเชื่อมต่อกับ OpenAI API");
+      throw new Error(data.error || "เกิดข้อผิดพลาดในการเชื่อมต่อกับระบบวิเคราะห์");
     }
 
-    const data = await response.json();
-    const resultText = data.choices[0].message.content;
+    const resultText = data.result;
 
-    // Show result
+    if (!resultText) {
+      throw new Error("ระบบตอบกลับมา แต่ไม่มีข้อความผลลัพธ์");
+    }
+
     displayResult(text, resultText);
-
-    // Save to archive
     saveToArchive(text, resultText);
 
-    // Clear input
     inputText.value = "";
     charCount.textContent = "0 / 2,000";
 
@@ -137,26 +123,27 @@ function hideError() {
 function displayResult(input, markdownResult) {
   const now = new Date();
   const timeString = now.toLocaleDateString('th-TH', {
-    year: 'numeric', month: 'short', day: 'numeric',
-    hour: '2-digit', minute: '2-digit'
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
   });
 
   resultTimestamp.textContent = timeString;
   resultQuote.textContent = `"${input}"`;
 
-  // Use Marked.js to parse Markdown to HTML
-  // First, let's process custom tags pattern if they match "**Tags:** ..."
   let processedMarkdown = markdownResult.replace(/\*\*Tags:\*\*\s*(.*)/g, (match, p1) => {
-    const tagsHtml = p1.split(/,\s*/).map(tag => `<span class="tag">${tag.trim()}</span>`).join('');
+    const tagsHtml = p1
+      .split(/,\s*/)
+      .map(tag => `<span class="tag">${tag.trim()}</span>`)
+      .join('');
+
     return `<div style="margin-top: 0.5rem; margin-bottom: 1rem;">${tagsHtml}</div>`;
   });
 
   resultBody.innerHTML = marked.parse(processedMarkdown);
-
-  // Show the card
   resultCard.classList.add('visible');
-
-  // Scroll to result smoothly
   resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -169,7 +156,6 @@ function closeModal(id) {
   document.getElementById(`modal-${id}`).classList.remove('visible');
 }
 
-// Close modal when clicking outside
 document.querySelectorAll('.modal-overlay').forEach(overlay => {
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) {
@@ -182,13 +168,12 @@ document.querySelectorAll('.modal-overlay').forEach(overlay => {
 function saveToArchive(input, result) {
   let archive = JSON.parse(localStorage.getItem('ai_person_archive') || '[]');
 
-  // Try to extract archetype name for summary (quick regex check based on prompt template)
   let archetype = "Analysis Result";
   const archetypeMatch = result.match(/##\s+\[(.*?)\]|\*\*\[(.*?)\]\*\*/);
+
   if (archetypeMatch) {
     archetype = archetypeMatch[1] || archetypeMatch[2];
   } else {
-    // Fallback: look for "Archetype" section
     const fallbackMatch = result.match(/# Archetype\s*\n+##\s+(.*?)\s*\n/i);
     if (fallbackMatch) archetype = fallbackMatch[1].trim();
   }
@@ -201,9 +186,8 @@ function saveToArchive(input, result) {
     archetype: archetype
   };
 
-  archive.unshift(newItem); // Add to beginning
+  archive.unshift(newItem);
 
-  // Limit to MAX_ARCHIVE
   if (archive.length > MAX_ARCHIVE) {
     archive = archive.slice(0, MAX_ARCHIVE);
   }
@@ -229,7 +213,10 @@ function renderArchive() {
 
   archive.forEach((item, index) => {
     const date = new Date(item.timestamp);
-    const dateStr = date.toLocaleDateString('th-TH', { month: 'short', day: 'numeric' });
+    const dateStr = date.toLocaleDateString('th-TH', {
+      month: 'short',
+      day: 'numeric'
+    });
 
     const div = document.createElement('div');
     div.className = 'archive-item';
@@ -245,10 +232,8 @@ function renderArchive() {
       </div>
     `;
 
-    // When clicking an archive item, display it
     div.addEventListener('click', () => {
       displayResult(item.input, item.result);
-      // Optional: scroll to result
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
