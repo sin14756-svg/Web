@@ -1,0 +1,65 @@
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
+
+  const apiKey = process.env.OPENAI_API_KEY;
+
+  if (!apiKey) {
+    return res.status(500).json({
+      error: "Vercel ไม่พบ OPENAI_API_KEY ใน Environment Variables"
+    });
+  }
+
+  try {
+    const { text, systemPrompt } = req.body;
+
+    if (!text || !systemPrompt) {
+      return res.status(400).json({
+        error: "Missing text or systemPrompt"
+      });
+    }
+
+    const openaiResponse = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + apiKey
+      },
+      body: JSON.stringify({
+        model: "gpt-4o-mini",
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: text }
+        ],
+        temperature: 0.7,
+        max_tokens: 2000
+      })
+    });
+
+    const data = await openaiResponse.json();
+
+    if (!openaiResponse.ok) {
+      return res.status(openaiResponse.status).json({
+        error: data.error?.message || "OpenAI API error"
+      });
+    }
+
+    const resultText = data.choices?.[0]?.message?.content;
+
+    if (!resultText) {
+      return res.status(500).json({
+        error: "OpenAI ตอบกลับมา แต่ไม่มีข้อความ result"
+      });
+    }
+
+    return res.status(200).json({
+      result: resultText
+    });
+
+  } catch (err) {
+    return res.status(500).json({
+      error: err.message || "Server error"
+    });
+  }
+}
