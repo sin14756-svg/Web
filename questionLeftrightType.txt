@@ -1,0 +1,300 @@
+หมวด 1: Moral & Value / คุณค่าและศีลธรรม
+P01 — Ethical Framework
+
+ฉันคิดว่าบางครั้งการทำผิดกฎก็ยอมรับได้ ถ้าผลลัพธ์สุดท้ายช่วยคนส่วนใหญ่ได้มากกว่า
+
+ซ้าย: Absolute Rules
+ขวา: Utilitarian
+
+P02 — Value Orientation
+
+เวลาตัดสินใจเรื่องใหญ่ ฉันให้เสรีภาพและสิทธิส่วนบุคคลสำคัญกว่าความเรียบร้อยของกลุ่ม
+
+ซ้าย: Collectivism
+ขวา: Individualism
+
+P03 — Justice Focus
+
+เมื่อมีคนทำผิด ฉันสนใจการเยียวยาและการให้โอกาสแก้ตัว มากกว่าการลงโทษให้สาสม
+
+ซ้าย: Retributive
+ขวา: Restorative
+
+P04 
+
+ฉันเชื่อว่าควรตัดสินคนด้วยมาตรฐานกลางเดียวกัน แม้บริบทและปูมหลังของแต่ละคนจะแตกต่างกัน
+
+ซ้าย = Contextual
+ขวา = Dogmatic
+
+
+P05 — Source of Meaning
+
+ชีวิตที่มีความหมายสำหรับฉันคือการได้ผลักตัวเองไปถึงศักยภาพสูงสุด มากกว่าการเหลือบางสิ่งไว้เพื่อคนอื่น
+
+ซ้าย: Altruistic Legacy
+ขวา: Self-Actualization
+
+P06 — Purpose Drive
+
+เวลาต้องลงแรงหรือเสียสละ ฉันมักคิดถึงความมั่นคงของตัวเองและคนใกล้ตัวก่อนคนทั่วไป
+
+ซ้าย: Altruism
+ขวา: Enlightened Self-Interest
+
+P07 — Loyalty Center
+
+ถ้าคนใกล้ตัวทำผิด ฉันมีแนวโน้มจะปกป้องเขาก่อน แม้ความจริงสากลจะบอกว่าเขาผิด
+
+ซ้าย: Universal Truth
+ขวา: Tribal Loyalty
+
+หมวด 2: Ego Architecture / โครงสร้างตัวตน
+P08 — Validation Source
+
+ฉันต้องการคำยืนยัน คำชม หรือผลตอบรับจากภายนอก เพื่อให้มั่นใจว่าสิ่งที่ทำมีคุณค่าจริง
+
+ซ้าย: Internal Appraisal
+ขวา: External Approval
+
+P09 — Identity Rigidity
+
+ฉันไม่ชอบเปลี่ยนตัวตน จุดยืน หรือศักดิ์ศรีของตัวเองเพียงเพื่อให้เข้ากับคนอื่น
+
+ซ้าย: Fluid Persona
+ขวา: Anchored Ego
+
+P10 — Self-Esteem Stability
+
+ความรู้สึกต่อตัวเองของฉันเปลี่ยนขึ้นลงง่ายตามความสำเร็จ ความล้มเหลว หรือปฏิกิริยาของคนรอบตัว
+
+ซ้าย: Resilient Stable
+ขวา: Volatile Sensitive
+
+P11 — Vulnerability Armor
+
+ฉันมักปิดบังความอ่อนแอ ความกลัว หรือความล้มเหลว เพื่อไม่ให้คนอื่นเห็นว่าฉันเปราะบาง
+
+ซ้าย: Radical Transparency
+ขวา: Impenetrable Guard
+
+P12 — Comparison Drive
+
+ฉันรู้สึกถึงความสำเร็จของตัวเองชัดขึ้น เมื่อเห็นว่าฉันไปไกลกว่าคนอื่น
+
+ซ้าย: Content Absolute
+ขวา: Competitive Relative
+
+P13 — Self-Error Response
+
+เมื่อเกิดความผิดพลาด ฉันมักมองหาปัจจัยภายนอกหรือสถานการณ์ก่อนที่จะโทษตัวเอง
+
+ซ้าย: Internal Accountability
+ขวา: Externalization Defence
+
+P14 — Identity Ambition
+
+ฉันไม่ค่อยพอใจกับจุดที่ยืนอยู่ และมักอยากยกระดับตัวเองขึ้นไปอีกเรื่อย ๆ
+
+ซ้าย: Satiated Contentment
+ขวา: Restless Mastery
+
+หมวด 3: Cognitive Engine / ระบบคิด
+P15 — Information Processing
+
+ฉันเชื่อข้อมูลละเอียด ตัวเลข และหลักฐานเฉพาะจุด มากกว่าความรู้สึกแรกหรือภาพรวมกว้าง ๆ
+
+ซ้าย: Intuitive Holistic
+ขวา: Analytical Granular
+
+P16 — Epistemic Certainty
+
+ฉันทนข้อมูลคลุมเครือได้ยาก และมักต้องการคำตอบที่ชัดเจนก่อนจะสบายใจ
+
+ซ้าย: Ambiguity Comfort
+ขวา: Concrete Proof
+
+P17 — Causal Thinking
+
+เวลาเจอปัญหา ฉันมักมองหาสาเหตุเชิงระบบและรากลึก มากกว่าแก้เฉพาะอาการตรงหน้า
+
+ซ้าย: Linear Immediate
+ขวา: Systemic Root-Cause
+
+P18 — Mental Model
+
+ฉันชอบคิดเป็นวิธีปฏิบัติ เครื่องมือ และสิ่งที่ทำได้จริง มากกว่าคิดเป็นทฤษฎีหรือภาพฝันกว้าง ๆ
+
+ซ้าย: Conceptual / Abstract
+ขวา: Practical / Concrete
+
+P19 — Focus Depth
+
+ฉันมักสนใจหลายเรื่องพร้อมกัน และชอบสแกนหาโอกาสใหม่ ๆ มากกว่าดำดิ่งกับเรื่องเดียวเป็นเวลานาน
+
+ซ้าย: Hyper-Focused
+ขวา: Scanning Radar
+
+P20 — Problem Solving Style
+
+เวลาแก้ปัญหายาก ฉันชอบใช้ขั้นตอน วิธีมาตรฐาน หรือ best practice ที่พิสูจน์แล้ว มากกว่าวิธีแปลกใหม่
+
+ซ้าย: Lateral Creative
+ขวา: Algorithmic Step
+
+P21 — Information Vigilance
+
+เวลาเจอแนวคิดใหม่ ฉันมักตั้งแง่ ตรวจช่องโหว่ และหาความย้อนแย้งก่อนจะเชื่อ
+
+ซ้าย: Open Reception
+ขวา: Critical Filtering
+
+หมวด 4: Fortitude & Risk / ความเสี่ยงและความอึด
+P22 — Risk & Uncertainty Action
+
+ฉันมักหลีกเลี่ยงความเสี่ยง และอยากปิดช่องโหว่ให้มากที่สุดก่อนลงมือ
+
+ซ้าย: Risk-Seeking
+ขวา: Risk-Averse
+
+P23 — Resilience & Pivot Velocity
+
+เมื่อเจอทางตัน ฉันมักกัดไม่ปล่อยและดันเป้าหมายเดิมต่อ มากกว่าเปลี่ยนทิศเร็ว
+
+ซ้าย: Fluid Pivot
+ขวา: Stubborn Grit
+
+P24 — Crisis & Pressure Coping
+
+เวลาวิกฤต ฉันมักตื่นตัว เร่งรีบ และรีบขับเคลื่อนแก้ปัญหา มากกว่านิ่งเย็นลง
+
+ซ้าย: Calm Composed
+ขวา: Alert Urgent
+
+P25 — Resource Management
+
+ฉันยอมทุ่มทรัพยากร เวลา เงิน หรือพลังงานหนัก ถ้ามันเปิดโอกาสเติบโตแบบก้าวกระโดด
+
+ซ้าย: Scarcity Conserving
+ขวา: Abundance Investing
+
+P26 — Instinct Reliance
+
+เวลาต้องตัดสินใจด่วน ฉันเชื่อข้อมูล ตัวเลข หรือความน่าจะเป็น มากกว่าสัญชาตญาณดิบ
+
+ซ้าย: Gut-Heuristics
+ขวา: Data-Calculated
+
+P27 — Long-term Horizon
+
+ฉันชอบคว้าโอกาสที่ให้ผลทันที มากกว่าทนรอผลลัพธ์ใหญ่ในอนาคตไกล
+
+ซ้าย: Delayed Gratification
+ขวา: Instant Execution
+
+P28 — Failure Attribution
+
+ฉันมองความล้มเหลวเป็นสัญญาณอันตรายที่ต้องคุมเข้ม เพื่อไม่ให้เกิดซ้ำ มากกว่ามองเป็นบทเรียนธรรมดา
+
+ซ้าย: Growth Learning
+ขวา: Threat Control
+
+หมวด 5: Social & Connection / ความสัมพันธ์และการสื่อสาร
+P29 — Empathy & Emotional Boundary
+
+เวลาคนอื่นทุกข์ ฉันมักแยกอารมณ์ตัวเองออกมา แล้วช่วยด้วยการหาทางแก้ปัญหา มากกว่าอินไปกับความรู้สึกเขา
+
+ซ้าย: Permeable Empathetic
+ขวา: Shielded Detached
+
+P30 — Communication Directness
+
+ฉันมักใช้คำพูดประนีประนอม รักษาน้ำใจ และรักษาบรรยากาศ มากกว่าพูดตรงแบบขวานผ่าซาก
+
+ซ้าย: Radical Candor
+ขวา: Diplomatic Harmonious
+
+P31 — Social Energy
+
+ฉันเติมพลังจากความสัมพันธ์กลุ่มเล็ก ๆ ที่ลึกและไว้ใจได้ มากกว่าการรู้จักคนจำนวนมาก
+
+ซ้าย: Proactive Networker
+ขวา: Selective Intimacy
+
+P32 — Trust Baseline
+
+ฉันมักตั้งแง่และตรวจสอบคนก่อน จนกว่าจะมีหลักฐานว่าเขาน่าไว้ใจ
+
+ซ้าย: Optimistic Trust
+ขวา: Skeptical Verification
+
+P33 — Conflict Mode
+
+เมื่อเกิดความขัดแย้ง ฉันมักยอมถอยหรือปล่อยผ่านชั่วคราว เพื่อรักษาความสงบและความสัมพันธ์
+
+ซ้าย: Confrontational
+ขวา: Accommodating
+
+P34 — Influence Style
+
+เวลาต้องโน้มน้าวคน ฉันพึ่งข้อมูล เหตุผล ตัวเลข และหลักฐาน มากกว่าพลังเล่าเรื่องหรืออารมณ์ร่วม
+
+ซ้าย: Charismatic Emotional
+ขวา: Logical Fact-Based
+
+P35 — Social Conformity
+
+ฉันให้ความสำคัญกับขนบ ระเบียบ ประเพณี หรือมาตรฐานสังคม มากกว่าการตั้งคำถามหรือแหกกรอบเดิม
+
+ซ้าย: Iconoclastic Maverick
+ขวา: Norm-Adhering
+
+หมวด 6: Power & Workspace / งาน อำนาจ และพื้นที่ทำงาน
+P36 — Authority Stance
+
+ฉันให้ความสำคัญกับลำดับชั้น ผู้ใหญ่ และระบบอาวุโส มากกว่าการตั้งคำถามกับผู้มีอำนาจโดยตรง
+
+ซ้าย: Independent Challenging
+ขวา: Institutional Respectful
+
+P37 — Collaboration vs Autonomy
+
+ฉันชอบทำงานแบบดึงคนอื่นเข้ามาร่วม ประสานงาน และสร้างพลังทีม มากกว่ารันเดี่ยวเงียบ ๆ
+
+ซ้าย: Solo Autonomy
+ขวา: Team Catalyst
+
+P38 — Execution Speed vs Quality
+
+ฉันยอมปล่อยเวอร์ชันแรกออกไปก่อน แม้มันยังไม่สมบูรณ์ แล้วค่อยปรับแก้ทีหลัง
+
+ซ้าย: Perfectionist Flawless
+ขวา: Iterative MVP
+
+P39 — Leadership & Control Style
+
+ถ้าต้องนำคน ฉันชอบบอกเป้าหมายแล้วปล่อยอิสระวิธีทำ มากกว่าคุมรายละเอียดทุกขั้น
+
+ซ้าย: Micro-Commanding
+ขวา: Macro-Servant
+
+P40 — Motivation Engine
+
+แรงจูงใจหลักในการทำงานของฉันมาจากเงิน ตำแหน่ง ชื่อเสียง หรือผลตอบแทนภายนอก มากกว่าความสนุกและการพัฒนาฝีมือ
+
+ซ้าย: Intrinsic Mastery
+ขวา: Extrinsic Reward
+
+P41 — Feedback Coachability
+
+เมื่อมีคนวิจารณ์งานของฉัน ฉันมักเชื่อมั่นในวิสัยทัศน์ตัวเองมากกว่าปรับตามคอมเมนต์ทันที
+
+ซ้าย: Receptive Learner
+ขวา: Self-Directed Confident
+
+P42 เวอร์ชันไม่ต้อง reverse
+
+ฉันเชื่อว่าในที่ทำงานควรวัดกันด้วยผลงานตรง ๆ มากกว่าการอ่านเกมอำนาจหรือสร้างพันธมิตร
+
+ซ้าย = Power-Aware Strategic
+ขวา = Merit-Transparent
